@@ -4,9 +4,22 @@ body {
     margin: 0; /*somewhat like a padding*/
     background-color: #1b1b32;
     color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
 }
 /*As label elements are inline by default, they appear on the same line as the text they are labelling. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other*/
 label {
     display:block;
     margin: 0.5rem 0;
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+
 }
