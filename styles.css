@@ -21,15 +21,16 @@ h1, p {
   }
 form {
     width: 60vw;
-      max-width: 500px;
-      min-width: 300px;
-      margin: 0 auto;
-  }
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
 fieldset {
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
-  }
+}
 /* The border of the last fieldset element looks a little out of 
 place. You can select the last element of a specific type using 
 the last-of-type CSS pseudo-class, like this:
@@ -72,4 +73,12 @@ input, textarea {
     background-color: #3b3b4f;
     border-color: white;
     min-width: 300px;
+    cursor: pointer;
+    
+  }
+  input[type="file"]{
+    padding: 1px 2px;
+  }
+  a{
+    color: #dfdfe2;
   }
