@@ -6,20 +6,70 @@ body {
     color: #f5f6f7;
     font-family: Tahoma;
     font-size: 16px;
-}
-/*As label elements are inline by default, they appear on the same line as the text they are labelling. To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other*/
+  }
+/*As label elements are inline by default, they appear on the same 
+line as the text they are labelling. To make them appear on separate 
+lines, add display: block to the label element, and add a margin of
+ 0.5rem 0, to separate them from each other*/
 label {
-    display:block;
+    display: block;
     margin: 0.5rem 0;
-}
+  }
 h1, p {
     margin: 1em auto;
     text-align: center;
-}
+  }
 form {
-    margin: 0 auto;
-    max-width: 500px;
-    min-width: 300px;
     width: 60vw;
-
+      max-width: 500px;
+      min-width: 300px;
+      margin: 0 auto;
+  }
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+/* The border of the last fieldset element looks a little out of 
+place. You can select the last element of a specific type using 
+the last-of-type CSS pseudo-class, like this:
+p:last-of-type { }
+That will select the last p element. Create a new selector that 
+targets the last fieldset element and set its border-bottom to none.
+Removes the last bottom border of fieldset
+*/
+fieldset:last-of-type {
+    border-bottom: none;
 }
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+/*this will make block inline
+Select only the .inline elements, and give them width of unset. 
+This will remove the earlier rule which set all the input elements 
+to width: 100%*/
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    margin: 10px 0 0 0;
+    width: 100%;
+    color: #ffffff;
+    min-height: 2em;
+  }
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
